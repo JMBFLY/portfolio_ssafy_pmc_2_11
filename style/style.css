@@ -1,0 +1,148 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container{
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+/* 시계 부분 */
+.timer-content{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.timer{
+    font-weight: 500;
+    font-size: 168px;
+    line-height: 168px;
+    /* color:black; */
+}
+
+/* 메모 부분 */
+.memo-wrapper{
+font-size: 24px;
+font-weight: bold;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.memo{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.memo-title{
+    padding-top: 10px;
+}
+
+.memo-input{
+    text-align: start;
+    width: 40vh;
+    font-size: 25px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+.memo-input::placeholder{
+    color: white;
+}
+
+
+/* 모달 부분 */
+.modal-button-wrapper{
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.modal-button-text{
+    font-weight: 800;
+    font-size: x-large;
+}
+
+/* input 부분 */
+.input-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    min-width: 260px;
+    width: 25vw;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.input-wrapper img{
+    width: 50px;
+    background: none;
+    border: none;
+}
+
+.inputbar{
+    min-width: 200px;
+    width: 80%;
+    padding-left: 10px;
+    font-weight: 400;
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+.inputbar::placeholder{
+    color:white;
+}
+
+/* 명언 부분 */
+.footertext{
+    position: fixed;
+    bottom: 10px;
+}
+
+.blockquote-footers{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: .875em;
+    color: white;
+}
+
+.blockquote-footers::before{
+    content: "— ";
+}
+
+/* 링크 부분 */
+.link{
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    z-index: 999;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+.link:hover{
+    color: bisque;
+}
